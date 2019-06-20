@@ -1,3 +1,8 @@
+var center = {
+	'lat': 49.30,
+	'lng': 20.05
+} 
+
 var tatrzanski_bor = {
 	'position': {lat: 49.311799, lng: 20.061783},
 	'label': 'Tatrzański Bór - przyjęcie',
@@ -10,7 +15,7 @@ var wiktorowki = {
 function myMap() {
   var mapProp = {
     disableDefaultUI: true,
-    center: new google.maps.LatLng(49.31,20.05),
+    center: new google.maps.LatLng(center['lat'], center['lng']),
     zoom: 12,
     zoomControl: true,
     scaleControl: true,
